@@ -16,11 +16,17 @@
 3. Search for and install the "CVSS Calculator" Extension.
 
 ### Load The JAR File
-1. Download the `CVSSCalculator.jar` file from the repository or build it from the source code.
+1. Download the `CVSS_Calculator.jar` file from the repository or build it from the source code.
 2. Open Burp Suite.
 3. Go to `Extender -> Extensions -> Add`.
-4. Select the `CVSSCalculator.jar` file and add it to Burp Suite.
+4. Select the `CVSS_Calculator.jar` file and add it to Burp Suite.
 5. A new tab for "CVSS Calculator" will be added to the Burp Suite interface.
+
+## Build From Source Code
+1. Ensure you have [Gradle](https://gradle.org/install/) installed.
+2. Clone the repository: `git clone https://github.com/moeinfatehi/CVSS_Calculator`
+3. Navigate to the main directory (where `build.gradle` exists) and run: `gradle makeJar`
+4. The Jar file will be generated in `build/libs/CVSS_Calculator.jar`
 
 ## How to Use CVSS_Calculator
 After adding the extension to Burp Suite, a new tab will be available where you can access both CVSS v2 and v3.1 calculators in separate tabs. Simply input the relevant metrics, and the tool will calculate the CVSS scores for you.
@@ -30,4 +36,3 @@ We welcome feedback and contributions to the CVSS_Calculator project. If you fin
 
 ## Contact
 For any inquiries or suggestions, please reach out via [GitHub Issues](https://github.com/moeinfatehi/CVSS_Calculator/issues) or contact me directly through my [Twitter account](https://twitter.com/MoeinFatehi).
-
